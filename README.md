@@ -13,3 +13,13 @@ Display the information on your webpage!
 Add any styling you like!
 
 Optional: add a ‘loading’ component that displays from the time the form is submitted until the information comes back from the API.
+
+
+intialize npm
+install loaders for
+    CSS
+    Bootstrap
+    SCSS
+    JQuery
+    babel
+    
