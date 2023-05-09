@@ -1,1 +1,0 @@
-// This is where weather forcast cards will be displayed
