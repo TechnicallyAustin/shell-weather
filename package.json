@@ -16,6 +16,7 @@
     "babel-loader": "^9.1.2",
     "bootstrap": "^5.2.3",
     "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
     "jquery": "^3.6.4",
     "popper.js": "^1.16.1",
     "postcss-loader": "^7.1.0",
