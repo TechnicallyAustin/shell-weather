@@ -23,3 +23,14 @@ install loaders for
     JQuery
     babel
     
+async function functionName(){
+	try {
+			const response = await fetch(url); 
+			const jsonData = await response.json();
+			console.log(jsonData)
+			// promise operations
+	}
+	catch (error){
+			// error handling
+  }
+}
