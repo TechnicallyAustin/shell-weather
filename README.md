@@ -1,4 +1,4 @@
-# odin-tunes
+# odin-weather
 ### Tasks
 Set up a blank HTML document with the appropriate links to your JavaScript and CSS files.
 
