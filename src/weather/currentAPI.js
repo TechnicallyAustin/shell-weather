@@ -1,14 +1,23 @@
+// requests from WEATHER API
+    // REALTIME API
+    // FORECAST API
+    // FUTURE API
+    // SEARCH API
+
+
 function current(){
+
     currentWeather = {
-        URL: "http://api.weatherapi.com/v1",
+        url: process.env.URL,
         now: `${url}/current.json`,
         forcast: `${url}/forcast.json`,
         futureForecast: `${url}/future.json`
     }
 
+    // different request parameters
     currentRequest = {
         key: process.env.API_KEY,
-        //query: // let q = User input from form
+        //query: // let q = User input from search bar
     };
 }
 
