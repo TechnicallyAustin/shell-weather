@@ -4,7 +4,7 @@
 export function weatherController(){
     const url = process.env.URL
     const apiKey = process.env.API_KEY
-
+    console.log(url)
     const weather = {
         current: async function(){
             const response = await fetch(url, {mode: `cors`});

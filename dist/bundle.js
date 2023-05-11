@@ -676,7 +676,51 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _src_css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _weather_controller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./weather/controller */ \"./src/weather/controller.js\");\n\n\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  console.log(\"Web Packed\");\n  (0,_weather_controller__WEBPACK_IMPORTED_MODULE_3__.weatherController)();\n});\n\n//# sourceURL=webpack://odin-weather/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _src_css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _page_createPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./page/createPage */ \"./src/page/createPage.js\");\n/* harmony import */ var _weather_controller__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./weather/controller */ \"./src/weather/controller.js\");\n\n\n\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  (0,_page_createPage__WEBPACK_IMPORTED_MODULE_3__.createPage)();\n});\n\n//# sourceURL=webpack://odin-weather/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/page/createPage.js":
+/*!********************************!*\
+  !*** ./src/page/createPage.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createPage\": () => (/* binding */ createPage)\n/* harmony export */ });\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer */ \"./src/page/footer.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/page/header.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main */ \"./src/page/main.js\");\n\n\n\nfunction createPage() {\n  const page = document.querySelector(\"page-content\");\n  const elements = {\n    header: (0,_header__WEBPACK_IMPORTED_MODULE_1__.buildHeader)(),\n    main: (0,_main__WEBPACK_IMPORTED_MODULE_2__.buildMain)(),\n    footer: (0,_footer__WEBPACK_IMPORTED_MODULE_0__.buildFooter)()\n  };\n  elements.header;\n  elements.main;\n  elements.footer;\n}\n\n//# sourceURL=webpack://odin-weather/./src/page/createPage.js?");
+
+/***/ }),
+
+/***/ "./src/page/footer.js":
+/*!****************************!*\
+  !*** ./src/page/footer.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"buildFooter\": () => (/* binding */ buildFooter)\n/* harmony export */ });\nfunction buildFooter() {\n  const page = document.querySelector(\".page-content\");\n  const elements = {\n    footer: null,\n    newFooter: function () {\n      const footer = page.appendChild(document.createElement(\"footer\"));\n      footer.setAttribute(\"class\", \" bg-info footer w-100 h-100\");\n      this.footer = footer;\n    },\n    footerContent: function () {\n      // footer content will go here.\n    }\n  };\n  elements.newFooter();\n  elements.footerContent();\n}\n\n//# sourceURL=webpack://odin-weather/./src/page/footer.js?");
+
+/***/ }),
+
+/***/ "./src/page/header.js":
+/*!****************************!*\
+  !*** ./src/page/header.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"buildHeader\": () => (/* binding */ buildHeader)\n/* harmony export */ });\nfunction buildHeader() {\n  const page = document.querySelector(\".page-content\");\n  const elements = {\n    header: null,\n    newHeader: function () {\n      const header = page.appendChild(document.createElement(\"header\"));\n      header.setAttribute(\"class\", \"header bg-warning w-100 h-100\");\n      this.header = header;\n    },\n    content: function () {\n      const content = this.header.appendChild(document.createElement(\"section\"));\n      content.setAttribute(\"class\", \"\");\n    }\n  };\n  elements.newHeader();\n  elements.content();\n}\n\n//# sourceURL=webpack://odin-weather/./src/page/header.js?");
+
+/***/ }),
+
+/***/ "./src/page/main.js":
+/*!**************************!*\
+  !*** ./src/page/main.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"buildMain\": () => (/* binding */ buildMain)\n/* harmony export */ });\nfunction buildMain() {\n  const page = document.querySelector(\".page-content\");\n  const elements = {\n    main: null,\n    newMain: function () {\n      const main = page.appendChild(document.createElement(\"main\"));\n      main.setAttribute(\"class\", \"main w-100 h-100 bg-dark\");\n      this.main = main;\n    },\n    cardContainer: function () {\n      const container = this.main.appendChild(document.createElement(\"div\"));\n      container.setAttribute(\"class\", \"card-container\");\n    }\n  };\n  elements.newMain();\n  elements.cardContainer();\n}\n\n//# sourceURL=webpack://odin-weather/./src/page/main.js?");
 
 /***/ }),
 
@@ -687,7 +731,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"weatherController\": () => (/* binding */ weatherController)\n/* harmony export */ });\n// This is a controller that will import the api call modules\n// import weatherController to index.js\n\nfunction weatherController() {\n  const url = \"http://api.weatherapi.com/v1\";\n  const apiKey = \"a43a978bbc944abba3120110230905\";\n  const weather = {\n    current: async function () {\n      const response = await fetch(url, {\n        mode: `cors`\n      });\n      const json = await response.json();\n      console.log(json);\n    },\n    forecast: async function () {},\n    future: async function () {},\n    search: async function () {}\n  };\n  weather.current();\n}\n\n//# sourceURL=webpack://odin-weather/./src/weather/controller.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"weatherController\": () => (/* binding */ weatherController)\n/* harmony export */ });\n// This is a controller that will import the api call modules\n// import weatherController to index.js\n\nfunction weatherController() {\n  const url = \"http://api.weatherapi.com/v1\";\n  const apiKey = \"a43a978bbc944abba3120110230905\";\n  console.log(url);\n  const weather = {\n    current: async function () {\n      const response = await fetch(url, {\n        mode: `cors`\n      });\n      const json = await response.json();\n      console.log(json);\n    },\n    forecast: async function () {},\n    future: async function () {},\n    search: async function () {}\n  };\n  weather.current();\n}\n\n//# sourceURL=webpack://odin-weather/./src/weather/controller.js?");
 
 /***/ }),
 
@@ -709,7 +753,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-weather/./src/css/style.css?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".page-content {\\n  width: 100vw;\\n  height: 100vh;\\n  display: grid;\\n  grid-template-areas: \\\"header main\\\" \\\"header main\\\" \\\"footer footer\\\";\\n  grid-template-columns: 1fr 3fr;\\n  grid-template-rows: 10fr 10fr 1fr;\\n}\\n\\n.header {\\n  grid-area: header;\\n}\\n\\n.main {\\n  grid-area: main;\\n}\\n\\n.footer {\\n  grid-area: footer;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-weather/./src/css/style.css?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 

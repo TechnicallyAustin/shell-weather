@@ -9,7 +9,7 @@ export function createPage(){
         main: buildMain(),
         footer: buildFooter()
     }
-    elements.header()
-    elements.main()
-    elements.footer()
+    elements.header
+    elements.main
+    elements.footer
 }
