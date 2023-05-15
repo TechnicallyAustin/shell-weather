@@ -34,3 +34,7 @@ async function functionName(){
 			// error handling
   }
 }
+
+setting up on macbook air
+new edits
+Additional edits
