@@ -15,7 +15,7 @@ export function mainContent() {
         },
         weatherContainer: function(){
             const weatherContainer = main.appendChild(document.createElement('div'));
-            weatherContainer.setAttribute('class', 'weather-container bg-light w-100 h-50');
+            weatherContainer.setAttribute('class', 'weather-container ms-2 bg-light w-100 h-50');
         }
     };
     elements.title();
