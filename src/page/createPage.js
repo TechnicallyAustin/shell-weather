@@ -12,4 +12,4 @@ export function createPage(){
     elements.header
     elements.main
     elements.footer
-}
+};
