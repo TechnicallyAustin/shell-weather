@@ -1,3 +1,4 @@
+import { mainContent } from "./content/mainContent";
 import { buildFooter } from "./footer";
 import { buildHeader } from "./header";
 import { buildMain } from "./main";
@@ -11,5 +12,6 @@ export function createPage(){
     }
     elements.header
     elements.main
+    mainContent()
     elements.footer
 };

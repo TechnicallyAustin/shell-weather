@@ -1,10 +1,10 @@
 export function mainContent() {
-    const main = docuement.querySelector('.main');
+    const main = document.querySelector('.main');
 
     const elements = {
         title: function(){
             const title = main.appendChild(document.createElement('h1'));
-            title.classList.add('title');
+            title.setAttribute('class', 'title text-white');
             title.textContent = 'Weather App';
         },
         location: function(){

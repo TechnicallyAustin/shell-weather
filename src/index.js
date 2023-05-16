@@ -8,5 +8,4 @@ import { mainContent } from "./page/content/mainContent";
 
 document.addEventListener("DOMContentLoaded", () => {
     createPage()
-    mainContent()
 });
