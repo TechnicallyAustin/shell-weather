@@ -9,7 +9,7 @@ export function buildHeader(){
         },
         content: function(){
             const content = this.header.appendChild(document.createElement("section"));
-            content.setAttribute("class", "");
+            content.setAttribute("class", "content");
         }
     }
     elements.newHeader()

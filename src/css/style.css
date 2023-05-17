@@ -1,6 +1,10 @@
+html {
+    overflow: hidden;
+}
 .page-content{
-    width: 100vw;
+    max-height: 100vh;
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-areas: 
     "header main"
@@ -14,9 +18,31 @@
 }
 
 .main{
+    align-items: center;
+    height: 100%;
+    width: 100%;
     grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "title"
+    "search"
+    "weather";
+    grid-template-rows: 1fr 1fr 8fr;
+}
+
+.title{
+    grid-area: title;
+}
+.location{
+    grid-area: search;
+}
+.weather-container{
+    grid-area: weather;
+    width: 97%;
+    height: 100%;
 }
 
 .footer{
+    height: 5vh;
     grid-area: footer;
 }
