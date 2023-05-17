@@ -12,6 +12,9 @@ html {
     "footer footer";
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 10fr 10fr 1fr;
+    background-image: url(../assets/sunset.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .header{
     grid-area: header;

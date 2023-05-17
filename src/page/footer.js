@@ -4,7 +4,7 @@ export function buildFooter(){
         footer: null,
         newFooter: function(){
             const footer = page.appendChild(document.createElement("footer"));
-            footer.setAttribute("class", " bg-info footer w-100 h-100")
+            footer.setAttribute("class", "footer w-100 h-100")
             this.footer = footer 
         },
         footerContent: function(){

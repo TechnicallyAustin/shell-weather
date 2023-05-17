@@ -4,7 +4,7 @@ export function buildHeader(){
         header: null,
         newHeader: function(){
             const header = page.appendChild(document.createElement("header"));
-            header.setAttribute("class", "header bg-warning w-100 h-100")
+            header.setAttribute("class", "header w-100 h-100")
             this.header = header
         },
         content: function(){

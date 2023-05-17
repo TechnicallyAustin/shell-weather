@@ -4,7 +4,7 @@ export function buildMain(){
         main: null,
         newMain: function(){
             const main = page.appendChild(document.createElement("main"))
-            main.setAttribute("class", "main bg-dark")
+            main.setAttribute("class", "main")
             this.main = main
         }
     }
